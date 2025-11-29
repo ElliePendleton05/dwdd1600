@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Ellie Pendleton">
+    <meta name="description" content="To create a central hub where people can explore, share, and connect through music — no matter the genre, background, or experience level.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="intro.css">
+    <link rel="icon" type="images/x-icon" href="images/thlogo.png">
+    <title>TuneHub: All Music. One Hub.</title>
+</head>
+
+<body>
+    <!-- start the page head -->
+     <header>
+        <img src="images/thlogo.png" alt="Logo for TuneHub" width="34" height="37">
+        <span>TuneHub: All Music. One Hub.</span>
+     </header>
+
+     <!-- start the page navigation -->
+      <nav>
+        <ul>
+            <li><a href="index.html">Genres</a></li>
+            <li><a href="eras.html">Eras</a></li>
+            <li><a href="history.html">History</a></li>
+            <li><a href="images.html">Images</a></li>
+            <li class="active"><a href="order.html">Order</a></li>
+            <li><a href="thanks.html">Thanks</a></li>
+        </ul>
+
+      </nav>
+      <!-- start the main content -->
+       <main>
+        <h1>Make a Playlist</h1>
+       <form method="get" class="myForm" action="thanks.html">
+
+       <fieldset>
+        <legend>Customer Information</legend>
+            <label>First Name*<input type="text" name="fname" required></label>
+            <label>Last Name*<input type="text" name="lname" required></label>
+            <label>Phone Number*<input type="tel" name="phone" required placeholder="801-333-1224"></label>
+            <label>Email*<input type="email" name="email" required placeholder="johnsmith@email.com"></label>
+       </fieldset>
+
+       <fieldset>
+        <legend>Playlist Type</legend>
+            <label><input type="radio" name="method" value="pump up">Pump Up</label>
+            <label><input type="radio" name="method" value="workout">Workout</label>
+            <label><input type="radio" name="method" value="study">Study</label>
+            <label><input type="radio" name="method" value="holiday">Holiday</label>
+            <label><input type="radio" name="method" value="relax">Relax</label>
+            <label><input type="radio" name="method" value="heartbreak">Heartbreak</label>
+       </fieldset>
+
+       <fieldset>
+        <legend>Favorite Genres</legend>
+        <label><input type="checkbox" name="pop" value="chosen">Pop</label>
+        <label><input type="checkbox" name="country" value="chosen">Country</label>
+        <label><input type="checkbox" name="rap" value="chosen">Rap</label>
+        <label><input type="checkbox" name="rock" value="chosen">Rock</label>
+        <label><input type="checkbox" name="jazz" value="chosen">Jazz</label>
+        <label><input type="checkbox" name="folk" value="chosen">Folk</label>
+        <label><input type="checkbox" name="latin" value="chosen">Latin</label>
+        <label><input type="checkbox" name="r&b" value="chosen">R&B</label>
+
+        <label>Where to Listen
+        <select name="place">
+        <option value="none">Please Select</option>
+        <option value="spotify">Spotify Music</option>
+        <option value="apple">Apple Music</option>
+        <option value="amazon">Amazon Music</option>
+        <option value="youtube">YouTube Music</option>
+        <option value="pandora">Pandora Music</option>
+        </select>
+        </label>
+       </fieldset>
+
+       <label>Comments
+            <textarea name="comments"></textarea>
+       </label>
+
+       <input type="submit" value="Send Order">
+       </form>
+       </main>
+
+
+       <!-- start page footer -->
+        <footer>
+            <p>&copy; 2025 &bull; Ellie Pendleton &bull; Web Essentials</p>
+        </footer>
+    
+</body>
+</html>

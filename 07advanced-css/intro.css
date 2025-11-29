@@ -1,0 +1,246 @@
+/*Prevent problems on different browsers*/
+* {box-sizing: border-box;}
+
+
+body {
+    font-family: "Roboto Condensed", sans-serif;
+    margin: 0;
+}
+
+/* header stuff here. */
+header {
+    background-color: #d36371;
+    padding: 1rem 10px;
+}
+header span {
+    color: #4467b5;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+/* navigation stuff here */
+
+/* small screen navigation */
+@media only screen and (max-width: 700px) {
+    nav ul {
+        margin: 0;
+        padding: 0;
+    }
+    nav a {
+        display: block;
+        text-align: center;
+        padding: .8rem;
+        color: #d36371;
+        background-color: #4467b5;
+        text-decoration: none;
+        border-bottom: solid 1px white;
+        font-weight: 900;
+        text-transform: uppercase;
+    }
+    nav .active a {
+        background-color: #4467b5;
+        color: #4467b5;
+        background-image: radial-gradient(circle at center, beige, #4467b5);
+    }
+} /*end small screens*/
+
+/* LARGE SCREEN NAVIGATION */
+@media only screen and (min-width: 701px) {
+nav {
+    border-top: solid 1px #4467b5;
+    background-color: #4467b5;
+}
+nav ul {
+    margin: 0;
+    padding: 0 10px;
+    list-style-type: none;
+    display: flex;
+}
+nav a {
+    display: block;
+    padding: 1rem 1rem;
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: #d36371;
+    font-weight: 900;
+    text-transform: uppercase;
+    text-align: center;
+    border-bottom: solid 2px white;
+}
+
+nav li.active a {
+    background-color: beige;
+    color: #4467b5;
+}
+
+nav li a:hover {
+    color: beige;
+}
+} /*end LARGE screens*/
+
+/* main image stuff here */
+figure.wrapped {
+    margin: 0 0 0 10px;
+    width: 30%;
+    float: right;
+}
+figure.wrapped img {
+    width: 100%;
+    height: auto;
+}
+figure.wrapped figcaption {
+    text-align: center;
+    font-size: 1rem;
+}
+
+/* main stuff here */
+main {
+    padding: 1rem;
+}
+
+main h1 {
+    color: #160a1e;
+}
+
+main h2 {
+    color: #4467b5;
+    margin-bottom: .3rem;
+}
+main p {
+    margin: 0;
+    color: #160a1e;
+}
+main ol {
+    padding: .5rem 30px;
+    background-color: beige;
+}
+main dl dt {
+    color: #160a1e;
+    font-weight: 500;
+    margin-top: 1rem;
+}
+main dl dd {
+    color: #160a1e;
+    font-size: 1rem;
+    margin-left: 20px;
+}
+main ul {
+    list-style-type: circle;
+}
+main ul li {
+    line-height: 125%;
+    margin-bottom: .5rem;
+    font-size: 1rem;
+}
+main strong {
+    font-weight: 700;
+    color: #160a1e;
+}
+
+main em {
+    font-weight: 300;
+}
+main address {
+    font-size: .75rem;
+    background-color: #d36371;
+    padding: .5rem;
+    border-radius: 10px;
+    border: 1px solid #4467b5;
+    width: 200px;
+}
+main a {
+    color: #4467b5;
+}
+main a:hover {
+    color: #758e7e;
+}
+.hero {
+    width: 100%;
+    height: auto;
+}
+
+.myForm fieldset {
+    border: 1px solid #4467b5;
+    border-radius: 3px;
+    margin-bottom: 1rem;
+}
+.myForm legend {
+    color: #4467b5;
+    font-size: .8rem;
+}
+.myForm label {
+    margin: .5rem;
+}
+
+.myForm label, .myForm select, .myForm [type=text], .myForm [type=tel], .myForm [type=email], .myForm textarea {
+    display: block;
+}
+
+.myForm [type=text], .myForm [type=tel], .myForm [type=email], .myForm select, .myForm textarea {
+    border: solid 1px #4467b5;
+    padding: .3rem;
+    width: 250px;
+    border-radius: .3rem;
+    font-family: "Roboto Condensed", sans-serif;
+    font-weight: 200;
+}
+
+.myForm select {
+    background-color: rgba(211,99,113,0.1)
+}
+.myForm textarea {
+    background-color: rgba(211,99,113,0.1);
+    height: 6rem;
+}
+
+.myForm :required {
+    background-color: rgba(211,99,113,0.1);
+}
+
+.myForm [type=submit] {
+    background-color: #d36371;
+    border: none;
+    padding: 1rem 2rem;
+    border-radius: 10px;
+    color: aliceblue;
+    margin: 1rem 0 0 1vw;
+    font-family: "Roboto Condensed", sans-serif;
+}
+
+
+/* Gallery stuff here */
+div.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px 10px;
+}
+div.gallery figure {
+    margin: 0;
+}
+div.gallery figcaption {
+    text-align: center;
+    font-size: 1rem;
+    color: #160a1e;
+}
+div.gallery img:hover {
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.5)
+}
+
+/* footer stuff here */
+footer {
+    background-color: beige;
+    text-align: center;
+    padding: 1rem 0;
+    font-size: .8rem;
+    color: #160a1e;
+    clear: both;
+}
+footer p{
+    margin: 0;
+    letter-spacing: 3px;
+}
+
+header, nav, main, footer {
+    max-width: 64rem;
+    margin: 0 auto;
+}
